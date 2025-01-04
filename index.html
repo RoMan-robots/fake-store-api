@@ -9,6 +9,31 @@
     <title>Fake Store API</title>
 </head>
 <body>
-    
+    <h1>Fake Store API</h1>
+    <div class="header">
+        <div class="sort">
+            <h3>Сортувати за:</h3>
+            <select name="sort" id="sort">
+                <option value="category">Категорією</option>
+                <option value="price">Ціною</option>
+            </select>
+        </div>
+       <div class="filter">
+           <h3>Фільтрувати за:</h3>
+           <p>Ціна</p>
+           <input type="number" id="min" placeholder="мінімальна">
+           <input type="number" id="max" placeholder="максимальна">
+           <p>Категорія</p>
+           <select name="category" id="category">
+               <option value="all">Всі</option>
+               <option value="Clothes">Одяг</option>
+               <option value="Shoes">Взуття</option>
+               <option value="Electronics">Електроніка</option>
+               <option value="Furniture">Меблі</option>
+               <option value="Miscellaneous">Різне</option>
+           </select>
+       </div>
+    </div>
+    <div class="products"></div>
 </body>
 </html>
